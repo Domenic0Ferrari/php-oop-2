@@ -20,11 +20,11 @@ include __DIR__ . '/db.php';
         <?php foreach ($products as $index => $product) { ?>
             <div class="card" style="width: 18rem;">
                 <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><?= $product->name ?></li>
+                    <li class="list-group-item">$<?= $product->price ?></li>
+                    <li class="list-group-item"><?= $product->categories ?></li>
                     <li class="list-group-item"><?= $product->materials ?></li>
                     <li class="list-group-item"><?= $product->size ?></li>
-                    <li class="list-group-item"><?= $product->name ?></li>
-                    <li class="list-group-item"><?= $product->price ?></li>
-                    <li class="list-group-item"><?= $product->categories ?></li>
                 </ul>
             </div>
         <?php } ?>
