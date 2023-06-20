@@ -19,16 +19,16 @@ include __DIR__ . '/db.php';
     <div class="container mt-5">
         <div class="card" style="width: 18rem;">
             <ul class="list-group list-group-flush">
-                <li class="list-group-item">An item</li>
-                <li class="list-group-item">A second item</li>
-                <li class="list-group-item">A third item</li>
+                <?php foreach ($products as $index => $product) { ?>
+                    <li class="list-group-item"><?= $product->materials ?></li>
+                    <li class="list-group-item"><?= $product->size ?></li>
+                    <li class="list-group-item"><?= $product->name ?></li>
+                    <li class="list-group-item"><?= $product->price ?></li>
+                    <li class="list-group-item"><?= $product->categories ?></li>
+                <?php } ?>
             </ul>
         </div>
     </div>
 </body>
 
 </html>
-<!-- <ul>
-        <?php foreach ($products as $index => $hi) ?>
-        <li><?= $hi->materials ?></li>
-    </ul> -->
