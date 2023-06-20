@@ -16,18 +16,18 @@ include __DIR__ . '/db.php';
 </head>
 
 <body>
-    <div class="container mt-5">
-        <div class="card" style="width: 18rem;">
-            <ul class="list-group list-group-flush">
-                <?php foreach ($products as $index => $product) { ?>
+    <div class="container mt-5 d-flex">
+        <?php foreach ($products as $index => $product) { ?>
+            <div class="card" style="width: 18rem;">
+                <ul class="list-group list-group-flush">
                     <li class="list-group-item"><?= $product->materials ?></li>
                     <li class="list-group-item"><?= $product->size ?></li>
                     <li class="list-group-item"><?= $product->name ?></li>
                     <li class="list-group-item"><?= $product->price ?></li>
                     <li class="list-group-item"><?= $product->categories ?></li>
-                <?php } ?>
-            </ul>
-        </div>
+                </ul>
+            </div>
+        <?php } ?>
     </div>
 </body>
 
