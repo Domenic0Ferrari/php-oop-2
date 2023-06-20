@@ -1,5 +1,7 @@
 <?php
-
+include __DIR__ . '/Models/Products.php';
+include __DIR__ . '/Models/Toys.php';
+include __DIR__ . '/db.php';
 ?>
 
 <!DOCTYPE html>
@@ -14,7 +16,19 @@
 </head>
 
 <body>
-    <div class="container"></div>
+    <div class="container mt-5">
+        <div class="card" style="width: 18rem;">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">An item</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+            </ul>
+        </div>
+    </div>
 </body>
 
 </html>
+<!-- <ul>
+        <?php foreach ($products as $index => $hi) ?>
+        <li><?= $hi->materials ?></li>
+    </ul> -->
