@@ -1,10 +1,8 @@
 <?php
 include_once __DIR__ . '/Product.php';
 include_once __DIR__ . '/Category.php';
-class Foods extends Product
+class Food extends Product
 {
-    public string $type;
-    public string $expiry;
     public function __construct(
         protected int $id,
         protected string $name,
@@ -12,6 +10,7 @@ class Foods extends Product
         protected Category $category,
         protected int $price,
         protected string $image,
+        // NEW
         protected string $expiry,
         protected string $weight,
     ) {

@@ -1,5 +1,5 @@
 <?php
-class Products
+class Product
 {
     // CONSTRUCT (si può scrivere così da php.8)
     public function __construct(
