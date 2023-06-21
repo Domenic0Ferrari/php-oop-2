@@ -1,7 +1,8 @@
 <?php
-include_once __DIR__ . '/Models/Toys.php';
-include_once __DIR__ . '/Models/Kennels.php';
 include_once __DIR__ . '/Models/Foods.php';
+include_once __DIR__ . '/Models/Category.php';
+include_once __DIR__ . '/Models/Toy.php';
+include_once __DIR__ . '/Models/Kennel.php';
 include_once __DIR__ . '/db.php';
 ?>
 
@@ -17,18 +18,12 @@ include_once __DIR__ . '/db.php';
 </head>
 
 <body>
-    <div class="container mt-5 d-flex">
-        <?php foreach ($products as $index => $product) { ?>
-            <div class="card" style="width: 18rem;">
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><?= $product->name ?></li>
-                    <li class="list-group-item">$<?= $product->price ?></li>
-                    <li class="list-group-item"><?= $product->categories ?></li>
-                    <li class="list-group-item"><?= $product->materials ?></li>
-                    <li class="list-group-item"><?= $product->size ?></li>
-                </ul>
-            </div>
-        <?php } ?>
+    <div class="container">
+        <div class="row row-cols-3">
+            <?php foreach ($arrProducts as $objProduct) {
+                echo $objProduct->printCard();
+            } ?>
+        </div>
     </div>
 </body>
 
