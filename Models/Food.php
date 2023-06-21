@@ -12,7 +12,7 @@ class Food extends Product
         protected string $image,
         // NEW
         protected string $expiry,
-        protected string $weight,
+        protected int $weight,
     ) {
         parent::__construct($id, $name, $description, $category, $price, $image);
     }

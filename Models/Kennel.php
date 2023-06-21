@@ -12,7 +12,6 @@ class Kennel extends Product
         // NEW
         private int $height, // in millimetri
         private int $width,
-        private int $length,
     ) {
         parent::__construct($id, $name, $description, $category, $price, $image);
     }
@@ -28,11 +27,10 @@ class Kennel extends Product
                     <p class=\"card-text\">{$this->description}</p>
                 </div>
                 <ul class=\"list-group list-group-flush\">
-                Dimensioni:
-                    <li class=\"list-group-item\">{$this->height}</li>
-                    <li class=\"list-group-item\">{$this->width}</li>
-                    <li class=\"list-group-item\">£{$this->length}</li>
-                    <li class=\"list-group-item\">£{$this->category->getName()}</li>
+                    <li class=\"list-group-item\">Prezzo: £{$this->price}</li> 
+                    <li class=\"list-group-item\">Categoria: {$this->category->getName()}</li>
+                    <li class=\"list-group-item\">Altezza: {$this->height}</li>
+                    <li class=\"list-group-item\">Lunghezza: {$this->width}</li>
                 </ul>
                 <div class=\"card-body\">
                     <a href=\"#\" class=\"card-link\">Card Link</a>
