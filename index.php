@@ -19,12 +19,14 @@ include_once __DIR__ . '/db.php';
 
 <body>
     <h1 class="text-center mt-5">SHOP PER ANIMALI</h1>
-    <div class="container d-flex justify-content-around mt-5 wrap">
-        <?php foreach ($arrProducts as $objProduct) { ?>
-            <div>
-                <?= $objProduct->printCard(); ?>
-            </div>
-        <?php } ?>
+    <div class="container mt-5">
+        <div class="row">
+            <?php foreach ($arrProducts as $objProduct) { ?>
+                <div class="col-4 mb-5 pt-3">
+                    <?= $objProduct->printCard(); ?>
+                </div>
+            <?php } ?>
+        </div>
     </div>
 </body>
 

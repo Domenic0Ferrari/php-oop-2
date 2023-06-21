@@ -21,7 +21,6 @@ class Kennel extends Product
     {
         // ritorna il codice html della card da mostrare in pagina
         return "
-        <div class=\"col\">
             <div class=\"card\" style=\"width: 18rem;\">
                 <img src=\"{$this->image}\" class=\"card-img-top\" alt=\"{$this->name}\">
                 <div class=\"card-body\">
@@ -39,7 +38,6 @@ class Kennel extends Product
                     <a href=\"#\" class=\"card-link\">Card Link</a>
                 </div>
             </div>
-        </div>
         ";
     }
 }
