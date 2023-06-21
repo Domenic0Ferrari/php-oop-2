@@ -18,7 +18,8 @@ include_once __DIR__ . '/db.php';
 </head>
 
 <body>
-    <div class="container d-flex gap-4 justify-content-around">
+    <h1 class="text-center mt-5">SHOP PER ANIMALI</h1>
+    <div class="container d-flex justify-content-around mt-5 wrap">
         <?php foreach ($arrProducts as $objProduct) { ?>
             <div>
                 <?= $objProduct->printCard(); ?>
