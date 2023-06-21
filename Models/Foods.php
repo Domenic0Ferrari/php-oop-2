@@ -1,6 +1,6 @@
 <?php
 include_once __DIR__ . '/Product.php';
-// include_once __DIR__ . '/Product.php';
+include_once __DIR__ . '/Category.php';
 class Foods extends Product
 {
     public string $type;
