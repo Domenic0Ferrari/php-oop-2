@@ -30,8 +30,6 @@ class Toy extends Product
                     <p class=\"card-text\">{$this->description}</p>
                 </div>
                 <ul class=\"list-group list-group-flush\">
-                    <li class=\"list-group-item\">{$this->weight}</li>
-                    <li class=\"list-group-item\">{$this->expiry}</li>
                     <li class=\"list-group-item\">£{$this->price}</li>
                     <li class=\"list-group-item\">£{$this->category->getName()}</li>
                 </ul>

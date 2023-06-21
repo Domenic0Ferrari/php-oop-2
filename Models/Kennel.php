@@ -29,9 +29,10 @@ class Kennel extends Product
                     <p class=\"card-text\">{$this->description}</p>
                 </div>
                 <ul class=\"list-group list-group-flush\">
-                    <li class=\"list-group-item\">{$this->weight}</li>
-                    <li class=\"list-group-item\">{$this->expiry}</li>
-                    <li class=\"list-group-item\">£{$this->price}</li>
+                Dimensioni:
+                    <li class=\"list-group-item\">{$this->height}</li>
+                    <li class=\"list-group-item\">{$this->width}</li>
+                    <li class=\"list-group-item\">£{$this->length}</li>
                     <li class=\"list-group-item\">£{$this->category->getName()}</li>
                 </ul>
                 <div class=\"card-body\">

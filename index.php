@@ -1,5 +1,5 @@
 <?php
-include_once __DIR__ . '/Models/Foods.php';
+include_once __DIR__ . '/Models/Food.php';
 include_once __DIR__ . '/Models/Category.php';
 include_once __DIR__ . '/Models/Toy.php';
 include_once __DIR__ . '/Models/Kennel.php';
@@ -18,12 +18,12 @@ include_once __DIR__ . '/db.php';
 </head>
 
 <body>
-    <div class="container">
-        <div class="row row-cols-3">
-            <?php foreach ($arrProducts as $objProduct) {
-                echo $objProduct->printCard();
-            } ?>
-        </div>
+    <div class="container d-flex gap-4 justify-content-around">
+        <?php foreach ($arrProducts as $objProduct) { ?>
+            <div>
+                <?= $objProduct->printCard(); ?>
+            </div>
+        <?php } ?>
     </div>
 </body>
 

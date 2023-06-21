@@ -21,7 +21,6 @@ class Food extends Product
     {
         // ritorna il codice html della card da mostrare in pagina
         return "
-        <div class=\"col\">
             <div class=\"card\" style=\"width: 18rem;\">
                 <img src=\"{$this->image}\" class=\"card-img-top\" alt=\"{$this->name}\">
                 <div class=\"card-body\">
@@ -29,16 +28,15 @@ class Food extends Product
                     <p class=\"card-text\">{$this->description}</p>
                 </div>
                 <ul class=\"list-group list-group-flush\">
-                    <li class=\"list-group-item\">{$this->weight}</li>
-                    <li class=\"list-group-item\">{$this->expiry}</li>
-                    <li class=\"list-group-item\">£{$this->price}</li>
-                    <li class=\"list-group-item\">£{$this->category->getName()}</li>
+                    <li class=\"list-group-item\">Peso: {$this->weight}g</li>
+                    <li class=\"list-group-item\">Data di scadenza: {$this->expiry}</li>
+                    <li class=\"list-group-item\">Prezzo: £{$this->price}</li>
+                    <li class=\"list-group-item\">Categoria: {$this->category->getName()}</li>
                 </ul>
                 <div class=\"card-body\">
                     <a href=\"#\" class=\"card-link\">Card Link</a>
                 </div>
             </div>
-        </div>
         ";
     }
 }
